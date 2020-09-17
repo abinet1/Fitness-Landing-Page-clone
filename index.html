@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+        <title>Fitness</title>
+    </head>
+    <body>
+        <section>
+            <header >
+                <a href="#" class="logo">Fitness</a>
+                <div class="toggleManu" onclick="toggleManu();"></div>
+                <ul class="navigation">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Trainer</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <h1 class="title">Build Perfect Body <br> With Clean Mind</h1>
+                <br>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa laudantium quam veniam ea facere consequuntur, explicabo provident earum enim, 
+                placeat architecto ipsa error, quasi nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <br>
+                <a href="#" class="btn">Get Started</a>
+                <ul class="si">
+                    <li>
+                        <a href="#"><img src="img/facebook.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/twitter.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/instagram.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <script type="text/javascript">
+            function toggleManu(){
+                const toggleManu = document.querySelector('.toggleManu');
+                const navigation = document.querySelector('.navigation');
+                toggleManu.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+        <!-- <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> -->
+    </body>
+</html>

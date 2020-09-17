@@ -1,0 +1,171 @@
+/*
+COLORS.
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Poppins',sans-serif;
+}
+
+section{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+} 
+
+header .logo{
+  position: relative;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: #FFF;
+  letter-spacing: 1px;
+}
+
+header .navigation{
+  position: relative;
+  display: flex;
+}
+
+header .navigation li{
+  list-style: none;
+}
+
+header .navigation li a{
+  display: inline-block;
+  color:#FFF;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.content{
+  max-width: 700px;
+  padding-left: 100px;
+}
+
+.title{
+  max-width: 700px;
+  font-size: 4em;
+  color: #FFF;
+}
+
+.paragraph{
+  color:#FFF;
+}
+
+.btn{
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #04A7EF;
+  background-color: #04A7EF;
+  color: #FFF;
+  padding: 5px 15px;
+}
+
+.si{
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+}
+
+.si li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.si li a{
+  position: relative;
+  display: inline-block;
+  margin-right:20px;
+  filter:invert(1);
+  transform: scale(0.5);
+}
+
+@media screen and (max-width:920px){
+  header{
+    padding: 15px 40px;
+  }
+  .content{
+    padding-left: 40px;
+  }
+  .title{
+    max-width: 700px;
+    font-size: 2em;
+    color: #FFF;
+  }
+  
+  .paragraph{
+    font-size: 0.95em;
+    color:#FFF;
+  }
+  
+  section{
+    background-image: url("../img/bg2.jpg");
+    font-size: cover;
+  }
+
+  header .navigation{
+    margin-top: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#000;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header .navigation li a{
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .toggleManu{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url("../img/menu.png");
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 11;
+  }
+
+  .toggleManu.active{
+    background: url("../img/close.png");
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+  }
+  header .navigation.active{
+    display: flex;
+  }
+}
